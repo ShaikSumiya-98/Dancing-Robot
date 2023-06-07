@@ -1,0 +1,340 @@
+body{
+    background-color: black;
+}
+h2{
+    color:aqua;
+}
+.bot{
+    height:500px;
+    border: 2px solid red;
+}
+.head{
+    height:150px;
+    width:150px;
+    background-color: chartreuse;
+    margin:auto;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition:width 1s ease;
+}
+.bot:hover .head{
+
+    /*width:250px;*/
+    transform:translateX(-30px);
+    animation:movehead 1s infinite;
+}
+@keyframes movehead{
+    0%{
+        /*width:150px;*/
+        transform: translateX(-30px);
+        background-color: blue;
+    }
+    25%{
+        /*width:250px;*/
+        transform: translateX(30px);
+        background-color: red;
+    }
+    50%{
+        /*width:150px;*/
+        transform: translateX(-30px);
+        background-color: aqua;
+
+    }
+    75%{
+        /*width:250px;*/
+        transform: translateX(30px);
+        background-color: gold;
+    }
+    100%{
+        /*width:150px;*/
+        transform: translateX(-30px);
+        background-color: hotpink;
+    }
+
+}
+.eyes{
+    width:150px;
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    margin-top: 70px;
+}
+.le{
+    height:30px;
+    width:30px;
+    background-color: black;
+    border-radius: 50%;
+    transition:width 1s ease;
+}
+.bot:hover .le{
+   transform:translateX(-20px);
+   animation:movele 1s infinite;
+}
+@keyframes movele{
+    0%{
+        transform:translateX(0px);
+        height:0px;
+    }
+    25%{
+        transform:translateX(-20px);
+        height:30px;
+    }
+    50%{
+        transform:translateX(0px);
+        height: 0px;
+    }
+    75%{
+        transform:translateX(-20px);
+        height: 30px;
+    }
+    100%{
+        transform:translateX(0px);
+        height: 0px;
+    }
+}
+.re{
+    height:30px;
+    width:30px;
+    background-color: black;
+    border-radius: 50%;
+    transition:transform 1s ease;
+}
+.bot:hover .re{
+    transform:translateX(-20px);
+    animation: movere 1s infinite;
+ }
+ @keyframes movere{
+     0%{
+        transform:translateX(0px);
+        height:0px;
+     }
+     25%{
+        transform:translateX(-20px);
+        height:30px;
+     }
+     50%{
+        transform:translateX(0px);
+        height:0px;
+     }
+     75%{
+        transform:translateX(-20px);
+        height: 30px;
+     }
+     100%{
+        transform:translateX(0px);
+        height:0px;
+     }
+ }
+.body{
+    display:flex;
+    justify-content: space-evenly;
+    width:250px;
+    margin:auto;
+}
+.larm{
+    height: 100px;
+    width:25px;
+    background-color: chartreuse;
+    border-radius: 100px;
+    margin-top: 20px;
+    transition:transform 1s ease;
+}
+.bot:hover .larm{
+    transform:rotate(90deg);
+    transform-origin: top center;
+    animation:movelarm 1s infinite;
+}
+@keyframes movelarm{
+    0%{
+        transform:rotate(00deg);
+        transform-origin: top center; 
+        background-color: blue;
+    }
+    25%
+    {
+        transform:rotate(90deg);
+        transform-origin: top center; 
+        background-color: red;
+    }
+    50%{
+        transform:rotate(00deg);
+    transform-origin: top center;
+    background-color: aqua;
+    }
+    75%{
+        transform:rotate(-90deg);
+        transform-origin: top center; 
+        background-color: gold;
+    }
+    100%{
+        transform:rotate(00deg);
+    transform-origin: top center;
+    background-color: hotpink;
+    }
+}
+.center{
+    height:150px;
+    width: 150px;
+    background-color: chartreuse;
+    border-bottom-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+    transition:transform 1s ease;
+}
+.bot:hover .center{
+    transform:rotate(360deg);
+    animation:movecenter 1s infinite;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+}
+@keyframes movecenter{
+    0%{
+        transform:rotate(-360deg);
+        transform-origin: center; 
+        background-color: blue;
+    }
+    25%{
+        transform:rotate(360deg);
+        transform-origin: center; 
+        background-color: red;
+    }
+    50%{
+        transform:rotate(-360deg);
+    transform-origin: center;
+    background-color: aqua;
+    }
+    75%{
+        transform:rotate(360deg);
+        transform-origin: center; 
+        background-color: gold;
+    }
+    100%{
+        transform:rotate(-360deg);
+    transform-origin: center;
+    background-color: hotpink;
+    }
+}
+.rarm{
+    height:100px;
+    width:25px;
+    background-color: chartreuse;
+    border-radius: 100px;
+    margin-top: 20px;
+    transition:transform 1s ease;
+}
+.bot:hover .rarm{
+    transform:rotate(90deg);
+    transform-origin: top center;
+    animation:moverarm 1s infinite;
+}
+@keyframes moverarm{
+    0%{
+        transform:rotate(00deg);
+        transform-origin: top center; 
+        background-color: blue;
+    }
+    25%{
+        transform:rotate(90deg);
+        transform-origin: top center; 
+        background-color: red;
+    }
+    50%{
+        transform:rotate(00deg);
+    transform-origin: top center;
+    background-color: aqua;
+    }
+    75%{
+        transform:rotate(-90deg);
+        transform-origin: top center; 
+        background-color: gold;
+    }
+    100%{
+        transform:rotate(00deg);
+    transform-origin: top center;
+    background-color: hotpink;
+    }
+}
+.legs{
+   display: flex;
+   justify-content: space-evenly;
+   width:100px;
+   margin:auto;
+   margin-top: 5px;
+}
+.rl{
+    height:100px;
+    width:25px;
+    background-color: chartreuse;
+    border-radius: 0 0 100px 100px;
+}
+.bot:hover .rl{
+    transform:rotate(30deg);
+    transform-origin: top center;
+    animation:moverl 1s infinite;
+}
+@keyframes moverl{
+    0%{
+        transform:rotate(00deg);
+        transform-origin: top center; 
+        background-color: blue;
+    }
+    25%{
+        transform:rotate(30deg);
+        transform-origin: top center; 
+        background-color: red;  
+    }
+    50%{
+        transform:rotate(00deg);
+    transform-origin: top center;
+    background-color: aqua;
+    }
+    75%{
+        transform:rotate(-30deg);
+        transform-origin: top center; 
+        background-color: gold;
+    }
+    100%{
+        transform:rotate(00deg);
+    transform-origin: top center;
+    background-color: hotpink;
+    }
+}
+.ll{
+    height:100px;
+    width:25px;
+    background-color: chartreuse;
+    border-radius: 0 0 100px 100px;
+}
+.bot:hover .ll{
+    transform:rotate(30deg);
+    transform-origin: top center;
+    animation:movell 1s infinite;
+}
+@keyframes movell{
+    0%{
+        transform:rotate(00deg);
+        transform-origin: top center; 
+        background-color: blue;
+    }
+    25%{
+        transform:rotate(30deg);
+        transform-origin: top center; 
+        background-color: red;
+    }
+    50%{
+        transform:rotate(00deg);
+    transform-origin: top center;
+    background-color: aqua;
+    }
+    75%{
+        transform:rotate(-30deg);
+        transform-origin: top center; 
+        background-color: gold;
+    }
+    100%{
+        transform:rotate(00deg);
+    transform-origin: top center;
+    background-color: hotpink;
+    }
+}
